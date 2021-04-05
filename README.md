@@ -13,13 +13,13 @@ The android app which acts as a socket io client is made with kotlin, and a sock
 
 ## How to use?
 
-Download the android app from the link below.
-Download [x360ce.](https://www.x360ce.com/)
-Download and install [vJoy.](http://vjoystick.sourceforge.net/site/index.php/download-a-install/download)
-Run the server.py file present in the SocketServer folder.
-Enter IP address of Your PC in the app.
-Configure the x360ce emulator.
-You are ready to play!
+Download the android app from the link below\n.
+Download [x360ce.](https://www.x360ce.com/)\n
+Download and install [vJoy.](http://vjoystick.sourceforge.net/site/index.php/download-a-install/download)\n
+Run the server.py file present in the SocketServer folder\n.
+Enter IP address of Your PC in the app\n.
+Configure the x360ce emulator\n.
+You are ready to play!\n\n
 
 Note: The PC must be connected to the phone's wifi hotspot.
 

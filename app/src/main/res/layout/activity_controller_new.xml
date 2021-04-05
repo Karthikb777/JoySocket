@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControllerNew">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onButtonUpClicked"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLeft"
+        app:layout_constraintStart_toEndOf="@+id/buttonLeft"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onButtonRightClicked"
+        app:layout_constraintStart_toEndOf="@+id/buttonDown"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUp"
+        app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onButtonDownClicked"
+        app:layout_constraintStart_toEndOf="@+id/buttonLeft"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLeft"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="89dp"
+        android:clickable="true"
+        android:onClick="onButtonLeftClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+    <SeekBar
+        android:id="@+id/leftHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rightHorizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="onButtonBClicked"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonRight"
+        app:srcCompat="@drawable/ic_xb" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onButtonAClicked"
+        app:layout_constraintEnd_toStartOf="@+id/buttonB"
+        app:layout_constraintTop_toBottomOf="@+id/buttonB"
+        app:srcCompat="@drawable/ic_xa" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onButtonYClicked"
+        app:layout_constraintBottom_toTopOf="@+id/buttonB"
+        app:layout_constraintStart_toEndOf="@+id/buttonX"
+        app:srcCompat="@drawable/ic_xy" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onButtonXClicked"
+        app:layout_constraintEnd_toStartOf="@+id/buttonA"
+        app:layout_constraintTop_toBottomOf="@+id/buttonY"
+        app:srcCompat="@drawable/ic_xx" />
+
+    <SeekBar
+        android:id="@+id/rt"
+        android:layout_width="192dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="59dp"
+        android:rotation="270"
+        app:layout_constraintEnd_toEndOf="@+id/buttonY"
+        app:layout_constraintStart_toEndOf="@+id/lt"
+        app:layout_constraintTop_toTopOf="@+id/buttonX" />
+
+    <Button
+        android:id="@+id/buttonLb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onLbBtnClicked"
+        android:text="LB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onViewBtnClicked"
+        android:text="view"
+        app:layout_constraintStart_toEndOf="@+id/buttonLb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="onMenuBtnClicked"
+        android:text="menu"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:onClick="onRbBtnClicked"
+        android:text="RB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/rightHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonB"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu" />
+
+    <SeekBar
+        android:id="@+id/lt"
+        android:layout_width="197dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="1dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="@+id/rt"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/buttonLb"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="LT"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/lt"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="RT"
+        app:layout_constraintBottom_toTopOf="@+id/rt"
+        app:layout_constraintStart_toStartOf="@+id/rightHorizontal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Horizontal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/leftHorizontal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:text="Right Horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rightHorizontal"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMenu" />
+
+    <Button
+        android:id="@+id/buttonXbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:onClick="onXboxBtnClicked"
+        android:text="Xbox"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMenu"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/stopSocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:onClick="onQuitBtnClicked"
+        android:text="quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
